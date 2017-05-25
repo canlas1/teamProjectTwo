@@ -5,7 +5,7 @@ var keys = {
     "token_uri": "https://accounts.google.com/o/oauth2/token",
     "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
     "client_secret": "pP2DhQC2dj15uLgLklLmqZ60",
-    "redirect_uris": ["https://teamprojecttwo.herokuapp.com/auth/google/callback"],
+    "redirect_uris": ["https://teamprojecttwo.herokuapp.com/auth/google"],
     "javascript_origins": ["https://teamprojecttwo.herokuapp.com"]
 }
 module.exports = keys;

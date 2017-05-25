@@ -9,6 +9,6 @@ module.exports = {
 	'googleAuth' : {
 		'clientID': keys.client_id,
 		'clientSecret': keys.client_secret,
-		'callbackURL': "https://teamprojecttwo.herokuapp.com/auth/google/callback"
+		'callbackURL': "https://teamprojecttwo.herokuapp.com/auth/google"
 	}
 }
