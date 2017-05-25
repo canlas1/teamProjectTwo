@@ -9,10 +9,24 @@ var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
 var passport = require('passport');
 var flash = require('connect-flash');
-
-
 var configDB = require('./config/database.js');
-mongoose.connect(configDB.url);
+
+
+var MongoClient = require('mongodb').MongoClient
+  , assert = require('assert');
+
+// Connection URL
+var url = 'mongodb://localhost:27017/teamprojecttwo';
+
+// Use connect method to connect to the server
+MongoClient.connect(url, function(err, db) {
+  assert.equal(null, err);
+  console.log("Connected successfully to server");
+
+  db.close();
+});
+
+
 require('./config/passport')(passport);
 
 app.use(morgan('dev'));
